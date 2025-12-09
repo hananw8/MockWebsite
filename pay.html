@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Payment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<img src="images/Bookshop.png" width="120px" alt="Bookshop Logo"/>
+
+<div id="navigation">
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About us</a></li>
+        <li><a href="contact.html">Contact us</a></li>
+    </ul>
+</div>
+
+<form id="payment-form">
+    <fieldset>
+        <h1>Payment options</h1>
+
+        <strong>Debit / Credit Card</strong>
+
+        <label for="card-number">Card Number</label>
+        <input type="text" id="card-number" required />
+
+        <label>Expiration Date</label>
+        <select id="exp-month" required>
+            <option value="">Month</option>
+            <option value="01">01</option>
+            <option value="02">02</option>
+            <option value="03">03</option>
+            <option value="04">04</option>
+            <option value="05">05</option>
+            <option value="06">06</option>
+            <option value="07">07</option>
+            <option value="08">08</option>
+            <option value="09">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+        </select>
+
+        <select id="exp-year" required>
+            <option value="">Year</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+            <option value="2029">2029</option>
+            <option value="2030">2030</option>
+        </select>
+
+        <label for="security-code">Security Code</label>
+        <input type="text" id="security-code" maxlength="4" required />
+        <small>3 or 4 digit number on the back of your card</small>
+
+        <button type="submit" id="continue-button">Continue</button>
+    </fieldset>
+</form>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
